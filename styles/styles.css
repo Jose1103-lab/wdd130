@@ -23,7 +23,7 @@ main img{
 }
 
 p{
-    padding: 10px;
+    padding: 0;
 }
 
 
@@ -44,10 +44,6 @@ aside{
 aside img{
     width: 150px;
     height: auto;
-}
-
-aside p{
-    padding: 0;
 }
 
 footer {
