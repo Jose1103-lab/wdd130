@@ -1,6 +1,13 @@
+:root{
+    --font-size: 16px;
+    --header-bg-color: #4682b4;
+    --borders: 1px solid #000000;
+}
+
+
 
 nav {
-    background-color: steelblue;
+    background-color: #4682b4;
     padding: 10px;
 }
 
@@ -17,7 +24,7 @@ h1{
 main img{
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid #4682b4;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
