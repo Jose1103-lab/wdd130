@@ -1,8 +1,10 @@
 :root{
-  --text-font-color: #444649;
-  --header-font-color: #73abd8;
+  --primary-color: #274C77;
+  --secondary-color: #a3cef1bf;
+  --accent-color1: #6096ba9e;
+  --accent-color2: #292929;
   --font-style: none;
-  
+  --padding: 1rem;
 
 }
 
@@ -17,35 +19,112 @@
     font-weight: 700;
     font-style: normal;
   }
-  
+body{
+  margin: 0;
+  padding:0 ;
+}
 
-  
 
-.hero>img{
+header{
+  background-color: var(--primary-color);
+  padding: var(--padding);
+}
+
+
+header nav{
+  display: inline-block;
+  max-width: 425px;
+  position: relative;
+  right: -50%;
+  top: -50px;
+}
+
+header nav a {
+  padding: 0 20px;
+}
+header nav a:hover{
+  color: var(--secondary-color);
+}
+
+
+
+
+
+.hero{
+  position: relative;
+}
+
+.hero img{
   display: block;
   width: 100%;
   height: auto;
 
+}  
+
+.hero h1{
+  position: absolute;
+  width: 100%;
+  max-width: 96%;
+  top: 2%;
+  padding: 2%;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.412);
+}
+  
+.hero article{
+  position: absolute;
+  background-color: var(--secondary-color);
+  padding: var(--padding);
+  width: 50%;
+  top: 12%;
+  left: 20%;
 }
 
-.text{
-  color: var(--text-font-color);
+.hero article img{
+  float: right;
+  width: 15em;
+}
+
+
+.hero section img{
+  width: 300px;
+  height: auto;
+  margin: 5px;
+}
+
+.hero section{
+  margin: 10px;
+  padding: var(--padding);
+  background-color: var(--secondary-color);
+}
+
+.hero section h2{
+  text-align: center;
+}
+
+
+p{
+
+  color: var(--accent-color2);
 }
 
 h2, h1{
-  color: var(--header-font-color);
+  color: var(--accent-color1);
 }
 
 a {
+  color: var(--accent-color2);
   text-decoration: var(--font-style);
 }
 
-main>article, h1{
-  position: absolute;
-
+footer{
+  background-color: var(--secondary-color);
 }
 
-article>img{
-  float: right;
-
+footer nav{
+  position: relative;
+  width: fit-content;
+  max-width:150px;
+  right: -75%;
+  bottom: 15px;
 }
