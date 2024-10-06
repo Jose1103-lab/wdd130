@@ -1,0 +1,53 @@
+:root{
+  --text-font-color: #444649;
+  --header-font-color: #73abd8;
+  --font-style: none;
+  
+
+}
+
+.hi-melody-regular {
+    font-family: "Hi Melody", sans-serif;
+    font-weight:500;
+    font-size: 25px;
+    font-style: normal;
+  }
+.aref-ruqaa-ink-bold {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+main{
+  max-width: 80%;
+}
+
+.hero>img{
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.text{
+  color: var(--text-font-color);
+}
+
+h2, h1{
+  color: var(--header-font-color);
+}
+
+a {
+  text-decoration: var(--font-style);
+}
+
+main>article, h1{
+  position: absolute;
+
+}
+
+article>img{
+  float: right;
+
+}
