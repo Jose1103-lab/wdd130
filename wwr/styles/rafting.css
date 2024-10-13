@@ -67,6 +67,7 @@ header nav a:hover{
   top: 2%;
   padding: 2%;
   text-align: center;
+  color: aliceblue;
   background-color:rgba(0, 0, 0, 0.412);
 }
   
@@ -74,20 +75,23 @@ header nav a:hover{
   position: absolute;
   background-color: var(--secondary-color);
   padding: var(--padding);
-  width: 50%;
+  width: 75%;
   top: 12%;
-  left: 20%;
+  left: 10%
 }
 
 .hero article img{
   float: right;
-  width: 15em;
+  width:200px;
+  height: auto;
+  margin-top: 50px;
+
 }
 
 
 .hero section img{
   width: 300px;
-  height: auto;
+  height: 200px;
   margin: 5px;
 }
 
@@ -106,8 +110,20 @@ header nav a:hover{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:stretch ;
+
 }
 
+.history>img{
+  float:right;
+  border-radius: 3px;
+}
+
+figure{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  border-radius: 3px;
+}
 
 p{
   color: var(--accent-color2);
