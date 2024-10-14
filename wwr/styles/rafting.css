@@ -42,11 +42,13 @@ header nav{
 }
 
 header nav a {
+  color: var(--secondary-color);
   padding: 0 20px;
+  font-size: 30px;
 }
 
 header nav a:hover{
-  color: var(--secondary-color);
+  color: var(--accent-color1);
 }
 
 
@@ -130,7 +132,7 @@ p{
 }
 
 h2, h1{
-  color: var(--accent-color1);
+  color: var(--primary-color);
 }
 
 a {
