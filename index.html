@@ -7,32 +7,41 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="description" content="This is a home page about myself, Jose Brito, and my experience a web dev studentb at BYUI">
     <meta name="author" content="Jose Brito">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="https://jose1103-lab.github.io/wdd130/">Home</a>
-            <a href="wwr/about.html">Week 3</a>
-            <a href="../wdd130/week02/box-model.html">Scripture</a></nav>
-
-    </header>
-    <main>
+    <header class="header-container">
         <h1>Jose Brito | WDD 130</h1>
-        <hr>
-        <img src="images/profile.webp" alt="Jose Brito" width="200">
-        <p>Hello! My name is Jose Brito, I'm from Santiago, Dominican Republic. I am so happy to be here,  
-            sharing and learning with you.<br><br>I hope to learn all what I need to be a successful student
-            and a better employee. 
-        </p>
+        <nav class="arvo-regular-italic headernav">
+            <a href="https://jose1103-lab.github.io/wdd130/" class="head-link">Home</a>
+            <a href="https://github.com/Jose1103-lab?tab=repositories" class="head-link">Projects</a>
+            <a href="wwr/about.html" class="head-link">White Water Rafting</a>
+            <a href="../wdd130/week02/box-model.html" class="head-link">Scripture</a>
+            <a href="https://www.facebook.com/josealberto.britosantana" class="head-link">Facebook</a>
+            <a href="https://www.linkedin.com/in/jose-alberto-brito-santana-8885052b1/" class="head-link">LinkedIn</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <div class="biography">
+            <img src="images/profile.webp" alt="Jose Brito" width="200" class="img1">
+            <p class="arvo-regular">Hello! My name is Jose Brito, I'm from Santiago, Dominican Republic. I am so happy to be here,  
+                sharing and learning with you.<br><br>I hope to learn all what I need to be a successful student
+                and a better employee. 
+            </p>
+        </div>
     </main>
+    
     <aside>
         <h2>Dominican Republic</h2>
         <img src="images/dr-flag.png" alt="Dom. Rep flag">
         <p>The Dominican Republic comprises two-thirds of the island of Hispaniola, one of the few islands in the world shared 
             by two independent nation-states. With a population of over 11 million people, its territory stretches 18,704 square miles.</p>
     </aside>
-
-
+        
     <footer>
         <p>Jose Brito <br> &copy; 2024 - Dom. Rep.</p>
     </footer>

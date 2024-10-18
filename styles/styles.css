@@ -1,38 +1,96 @@
 :root{
     --font-size: 16px;
-    --header-bg-color: #4682b4;
-    --borders: 1px solid #000000;
+    --header-bg-color: #b3d8f6;
+    --header-font-color: #0066ba;
+    --text-font-color: #000000;
+}
+
+.arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.arvo-regular-italic {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
+/* From here the header------------------------------------------------- */
 
-nav {
-    background-color: #4682b4;
-    padding: 10px;
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    background-color: var(--header-bg-color);
 }
 
-nav a{
-    color: white;
+.headernav {
+    /* border: 2px solid red; Test */
+    display: flex;
+    flex-direction: row;
+    width:fit-content ;
+}
+
+.head-link{
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     display: block;
     padding: 20px;
 }
 
+.head-link:hover{
+    color: #e000a8;
+}
+
 h1{
-    color: steelblue;
+    align-content: center;
+    color: var(--header-font-color);
+}
+
+
+
+/* From here the main feed--------------------------------------------- */
+hr{
+margin-top: 5px;
+margin-bottom: 5px;
+    width: 100%;
+}
+
+main{
+    /* border: 1px solid red; test */
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 main img{
+    position: relative;
+    float: left;
     width: 150px;
     height: auto;
     border: 1px solid #4682b4;
+    margin-right: 10px;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+main p{
+    display: inline;
 }
 
 p{
     padding: 0;
 }
-
 
 main{
     max-width: 840px;
@@ -53,7 +111,14 @@ aside img{
     height: auto;
 }
 
+
+/* From here the footer -------------------------------------------------*/
+
 footer {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    background-color: var(--header-bg-color);
     margin-top: 15px;
     border-top: 1px solid rebeccapurple;
     text-align: center;
