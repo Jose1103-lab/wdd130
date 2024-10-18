@@ -42,7 +42,7 @@ header nav{
 }
 
 header nav a {
-  color: var(--secondary-color);
+  color: white;
   padding: 0 20px;
   font-size: 30px;
 }
@@ -122,7 +122,7 @@ header nav a:hover{
 
 figure{
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: white;
   text-align: center;
   border-radius: 3px;
 }
