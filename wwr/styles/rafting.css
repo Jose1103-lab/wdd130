@@ -5,7 +5,7 @@
   --accent-color2: #292929;
   --font-style: none;
   --padding: 1rem;
-
+  
 }
 
 .hi-melody-regular {
@@ -14,25 +14,28 @@
     font-size: 25px;
     font-style: normal;
   }
-.aref-ruqaa-ink-bold {
+  .aref-ruqaa-ink-bold {
     font-family: "Aref Ruqaa Ink", serif;
     font-weight: 700;
     font-style: normal;
   }
-body{
-  margin: 0;
-  padding:0 ;
-}
+  
+  body{
+    margin: 0;
+    padding:0 ;
+  }
 
-header{
-  background-color: var(--primary-color);
-  padding: var(--padding);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
- 
-header nav{
+  /* From here the style for the header-------------------------------------- */
+  
+  header{
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  header nav{
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -51,6 +54,7 @@ header nav a:hover{
   color: var(--accent-color1);
 }
 
+/* From here the style for the main-------------------------------------- */
 
 .hero{
   position: relative;
@@ -112,7 +116,7 @@ header nav a:hover{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:stretch ;
-
+  
 }
 
 .history>img{
@@ -140,6 +144,8 @@ a {
   text-decoration: var(--font-style);
 }
 
+/* From here the style for the header-------------------------------------- */
+
 footer{
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -163,4 +169,30 @@ footer p{
   align-self:end;
   text-align:center;
   height: fit-content;
+}
+
+
+/* from here the style for contact us page------------------------------------------- */
+
+.super-hero{
+  position: relative;
+}
+
+.super-hero img{
+  filter: blur(5px);
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.super-hero article{
+  position: absolute;
+  background-color: rgba(220, 220, 220, 0.499);
+  border-radius: 5px;
+  padding: var(--padding);
+  width: 75%;
+  height: 400px ;
+  top: 12%;
+  left: 10%
 }
