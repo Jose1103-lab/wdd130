@@ -203,8 +203,14 @@ footer p{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-
 }
+
+ .customer-pic{
+  width:18rem;
+  background-color: var(--accent-color1);
+  color: var(--accent-color2);
+
+ }
 
 .contact-form{
   grid-row: 1/span 3;
@@ -253,4 +259,8 @@ form h2 {
 
 .labels{
   color: var(--primary-color);
+}
+
+.pic-1{
+  justify-self: right;
 }
