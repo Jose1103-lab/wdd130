@@ -209,7 +209,9 @@ footer p{
  .customer-pic{
   /* text-align: justify;
   text-justify: ; */
-  width:18rem;
+  width:25rem;
+  margin: 10px;
+  padding-top: 4px;
   background-color: var(--accent-color1);
   color: var(--accent-color2);
 
@@ -282,4 +284,6 @@ figure img{
   width: 250px;
   height: 200px;
   margin: 5px;
+  border-radius: 3px;
+  margin: 0;
 }
