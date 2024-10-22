@@ -207,6 +207,8 @@ footer p{
 }
 
  .customer-pic{
+  /* text-align: justify;
+  text-justify: ; */
   width:18rem;
   background-color: var(--accent-color1);
   color: var(--accent-color2);
