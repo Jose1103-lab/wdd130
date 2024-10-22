@@ -26,32 +26,53 @@
     </header>
 
     <main>
+        
+
         <div class="super-hero">
             <img src="../wwr/Images/l_rafting12_1024.webp" alt="People rafting">
             
-            <form action="contact-us" class="contact-form">
-                <label for="firstname">First name</label>
-                <input type="text" name="firstname" id="firstname" required>
-                <label for="lastname">Last name</label>
-                <input type="text" name="lastname" id="lastname" required>
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" required>
-                <!-- <p>Select a reason</p> -->
-                <input type="radio" name="r-1" id="r-1" required>
-                <label for="r-1">General Inquiry</label>
-                <input type="radio" name="r-2" id="r-2" required>
-                <label for="r-2">Reservation Question</label>
-                <input type="radio" name="r-3" id="r-3" required>
-                <label for="r-3">Website Suggestion</label>
-                <label for="message">Type you Inquiry below</label>
-                <textarea name="message" id="message" maxlength="200" placeholder="@Example: I would like to have an amazing exp... (200 characters max)"></textarea>
+            <article class="information">
+
+                <h1 class="contact-title">Contact information</h1>
                 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.7694459776333!2d-69.9173654017889!3d18.46644783580474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89d72e6be0af%3A0xc577cb29d1eafdf5!2sSanto%20Domingo%20Dominican%20Republic%20Temple!5e0!3m2!1sen!2sdo!4v1729223112381!5m2!1sen!2sdo" width="300" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="info-content">
+                    <p class="hi-melody-regular">
+                        <Strong>Address:</Strong> Av. Simon Bolívar 825, Santo Domingo 10106
+                    </p>
+                    <p class="hi-melody-regular">
+                        <Strong>Phone:</Strong> +1 809-765-1957
+                    </p>
+                    <p class="hi-melody-regular">
+                        <Strong>Email address:</Strong> josia120414@gmail.com
+                    </p>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.7694459776333!2d-69.9173654017889!3d18.46644783580474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89d72e6be0af%3A0xc577cb29d1eafdf5!2sSanto%20Domingo%20Dominican%20Republic%20Temple!5e0!3m2!1sen!2sdo!4v1729223112381!5m2!1sen!2sdo" width="300" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </article>
+
+            <form action="contact-us" class="contact-form">
+                <h2>Schedule your next adventure</h2>
+                <label for="firstname" class="labels hi-melody-regular">First name</label>
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="lastname" class="labels hi-melody-regular">Last name</label>
+                <input type="text" name="lastname" id="lastname" required>
+                <label for="email"class="labels hi-melody-regular">Email address</label>
+                <input type="email" name="email" id="email" required>
+                <p class="hi-melody-regular">Select a reason</p>                
+                <label for="r-1" class="radio labels hi-melody-regular"><input type="radio" name="r-1" id="r-1" required>General Inquiry</label>
+                <label for="r-2" class="radio labels hi-melody-regular"><input type="radio" name="r-1" id="r-2" required>Reservation Question</label>
+                <label for="r-3" class="radio labels hi-melody-regular"><input type="radio" name="r-1" id="r-3" required>Website Suggestion</label>
+                <!-- text area -->
+                <label for="message"class="labels hi-melody-regular">Type you inquiry below</label>
+                <textarea name="message" id="message" maxlength="200" placeholder="@Example: I would like to have an amazing exp... (200 characters max)" rows="5" cols="10" class="hi-melody-regular"></textarea>
+                
+                <label for="subscribe"class="labels hi-melody-regular"><input type="checkbox" name="subscribe">Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit"class="labels hi-melody-regular">Send email</button>
             </form>
-
-
+               
         </div>
-
+        
 
     </main>
     
