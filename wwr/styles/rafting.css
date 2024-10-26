@@ -67,7 +67,7 @@ header nav a:hover{
   height: auto;
 }  
 
-.hero h1{
+.about-title{
   position: absolute;
   width: 100%;
   max-width: 96%;
@@ -78,16 +78,16 @@ header nav a:hover{
   background-color:rgba(0, 0, 0, 0.412);
 }
   
-.hero article{
+.art-about{
   position: absolute;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color1);
   padding: var(--padding);
   width: 75%;
   top: 12%;
   left: 10%
 }
 
-.hero article img{
+.art-about img{
   float: right;
   width:200px;
   height: auto;
@@ -174,17 +174,8 @@ footer p{
 
 /* from here the style for contact us page------------------------------------------- */
 
-.super-hero{
-  position: relative;
-}
 
-.super-hero img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.super-hero article{
+.information{
   display: grid;
   grid-template-columns:1fr 1fr; 
   grid-template-rows: 1fr 3fr;
