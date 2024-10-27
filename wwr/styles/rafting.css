@@ -126,9 +126,32 @@ header nav a:hover{
   
 }
 
-.history>img{
-  float:right;
+.history{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
   border-radius: 3px;
+  justify-items: center;
+}
+
+.history img{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.h-p1{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.h-p2{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.history h2 {
+  grid-column: 1/ span 4;
+  grid-row: 1/2;
 }
 
 section figure{
@@ -144,6 +167,10 @@ p{
 
 h2, h1{
   color: var(--primary-color);
+}
+
+img{
+  border-radius:5px ;
 }
 
 a {
