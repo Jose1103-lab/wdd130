@@ -26,7 +26,6 @@
     box-sizing:border-box;
 }
 
-
 .pas-link{ 
     /* To all passive links */
     text-decoration: none;
@@ -34,7 +33,7 @@
 }
 
 
-/* From here the header------------------------------------------------- */
+/* From here the header---------------core---------------------------------- */
 
 .header-container{
     display: grid;
@@ -73,9 +72,7 @@ header h1{
     text-wrap: nowrap;
 }
 
-/* From here the main feed--------------------------------------------- */
-
-
+/* From here the main feed------core-------------------------------- */
 main{
     /* border: 1px solid red;  */
     border-top: 1px solid var(--border-color); 
@@ -85,40 +82,8 @@ main{
     grid-template: 1fr / 20% 80%;
     align-content:start;
 }
-
-.mn-pvw{
-    /* border: 1px solid red;  */
-    background-color:#e6e6e6;
-    grid-column: 2/3;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-content: flex-start;
-}
-
-.item-preview{
-    background-color: var(--bg-color1);
-    margin: 20px;
-    padding: 3px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    box-shadow: 5px 3px 10px gray;
-
-}
-.item-preview img{
-    border-radius: 5px;
-    width: 200px;
-    height: auto;
-}
-.item-preview div{
-    padding-left:10%;
-    padding-right:10%;
-    text-align: center;
-    text-wrap:wrap;    
-}
-
-/* the aside module------------------------ */
-aside{
+/* the aside module--------core---------------------------------- */
+.mn-aside{
     border-right: 1px solid var(--border-color); 
     grid-area: 1/1/2/2;
     height: 100%;
@@ -126,13 +91,7 @@ aside{
     background-color:var(--alt-bg-color);
 }
 
-.tool-bag{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* From here the footer -------------------------------------------------*/
+/* From here the footer------------core-------------------------------------*/
 footer {
     padding-top: 10px;
     width: 100%;
@@ -176,3 +135,64 @@ footer img{
     flex-direction: column;
     color: var(--bg-color1);
 }
+
+/* home page stuff ------------------------*/
+
+    /* side bar */
+.asd-it{
+    margin: 10px 10px 25px 10px;
+}
+
+/* main feed */
+.fd-cont{
+    margin: 5px 10%;
+
+}
+
+/* project page stuff ------------------------*/
+
+    /* side bar */
+.tool-bag{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+    /* main feed */
+.mn-pvw{
+    /* border: 1px solid red;  */
+    background-color:#e6e6e6;
+    grid-column: 2/3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content: flex-start;
+}
+
+.item-preview{
+    width: 300px;
+    background-color: var(--bg-color1);
+    margin: 20px;
+    padding: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px gray;
+    
+}
+.item-preview img{
+    border-radius: 5px;
+    width: 100%;
+    height: 75%;
+    margin-bottom: 10px;
+}
+.item-preview div{
+    /* border: 1px solid red; */
+    height: 20%;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: center;
+    text-wrap:wrap;    
+}
+
+
+/* contact page stuff -----------------------------*/
