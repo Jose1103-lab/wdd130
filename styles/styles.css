@@ -51,11 +51,13 @@ li{
 /* From here the header---------------core---------------------------------- */
 
 .header-container{
+    order: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center ;
     padding: 20px;
     background-color: var(--bg-color1);
+    box-shadow: 1px 1px 15px var(--bg-color1) ;
 }
 
 .headernav {
@@ -73,11 +75,13 @@ li{
     color: var(--font-color2);
     display: block;
     padding: 10px 10px;
+    border-bottom: 2px solid var(--bg-color1);
+    transition: .5s;
 }
 
 .head-link:hover{
     color: var(--font-color1);
-    transition: .5s;
+    border-bottom: 2px solid var(--font-color1);
 }
 
 header h1{
@@ -96,7 +100,7 @@ main{
     border-bottom: 1px solid var(--border-color); 
     width: 100%;
     display: grid;
-    grid-template: 1fr / 20% 80%;
+    grid-template: 1fr / 100px 80% 125px;
     align-content:start;
 }
 /* the aside module--------core---------------------------------- */
@@ -162,7 +166,7 @@ footer img{
 
 /* main feed */
 .hero{
-    grid-area: 1/1/2/4;
+    grid-area: 1/1/2/5;
     position: relative;
 }
 .hero img{
@@ -210,6 +214,23 @@ footer img{
 
 .mn-it{
     margin-bottom:100px ;
+}
+
+.it-tecn{
+    background-color: #ffffff;
+    border: 1px solid var(--font-color1);
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px;
+    height: fit-content;
+    margin: 1px;
+}
+
+.tec-cont{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 /* project page stuff ------------------------*/
